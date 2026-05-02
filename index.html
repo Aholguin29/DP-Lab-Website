@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DP Lab - Digital Process Lab. Construimos sistemas digitales que captan y convierten: sitios web, automatizaciones y workflows con IA para empresas que quieren escalar.">
+  <meta property="og:title" content="DP Lab | Sistemas digitales que captan y convierten">
+  <meta property="og:description" content="Sitios web, automatización con n8n y workflows con IA. Para empresas que necesitan crecer sin caos operativo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dprocesslab.com">
+  <title>DP Lab | Sistemas digitales que captan y convierten</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="logo-mark">DP</span>
+        <span class="logo-text">Lab</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu">
+        <a href="#servicios" class="nav__link">Servicios</a>
+        <a href="#proceso" class="nav__link">Cómo trabajamos</a>
+        <a href="#calculadora" class="nav__link">Calculadora</a>
+        <a href="#trabajo" class="nav__link">Trabajo</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+        <a href="#contacto" class="btn btn--primary nav__cta">Agendar conversación</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <p class="hero__eyebrow"><span class="hero__eyebrow-dot"></span> Digital Process Lab</p>
+        <h1 class="hero__title">Construimos los <span class="accent">sistemas digitales</span> que tu empresa no tiene tiempo de armar.</h1>
+        <p class="hero__subtitle">Sitios web que captan leads. Automatizaciones que convierten. Integraciones que conectan tus herramientas. Diseñamos, implementamos y mantenemos el stack digital que tu operación necesita para escalar sin caos.</p>
+        <div class="hero__ctas">
+          <a href="#contacto" class="btn btn--primary">Conversemos sobre tu caso</a>
+          <a href="#servicios" class="btn btn--ghost">Ver servicios →</a>
+        </div>
+      </div>
+
+      <div class="terminal reveal" id="terminal">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--yellow"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">dp-lab — workflow.run</span>
+        </div>
+        <div class="terminal__body" id="terminalBody"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero__meta reveal">
+        <div class="meta-item">
+          <span class="meta-num"><span class="counter" data-target="2" data-suffix="-6">0</span></span>
+          <span class="meta-label">semanas de implementación promedio</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-num"><span class="counter" data-target="100" data-suffix="%">0</span></span>
+          <span class="meta-label">infraestructura propia y controlada</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-num"><span class="counter" data-target="0">0</span></span>
+          <span class="meta-label">contratos eternos. Cancelas cuando quieras.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-header__eyebrow">Servicios</p>
+        <h2 class="section-header__title">Cuatro capacidades. <span class="accent">Una sola lógica</span>: que tu negocio gane tiempo y plata.</h2>
+        <p class="section-header__subtitle">Trabajamos en la intersección de diseño, código y automatización. Lo que para otros son tres equipos distintos, en DP Lab es un único sistema integrado.</p>
+      </header>
+
+      <div class="services__grid">
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Sitios web orientados a conversión</h3>
+          <p class="service-card__text">No "sitios lindos". Sitios pensados para generar leads, agendar reuniones y vender 24/7. Diseño moderno, copy persuasivo, formularios conectados a tus herramientas, métricas reales.</p>
+          <ul class="service-card__list">
+            <li>Landing pages de alta conversión</li>
+            <li>Sitios institucionales con CMS</li>
+            <li>E-commerce simple a medida</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Automatizaciones a medida con n8n</h3>
+          <p class="service-card__text">Lead routing, calificación, follow-up, sincronización de sistemas. Hospedamos n8n en infraestructura propia para darte costos predecibles y control total. Sin Zapier, sin sorpresas de facturación.</p>
+          <ul class="service-card__list">
+            <li>Automatización de captación de leads</li>
+            <li>Workflows operativos internos</li>
+            <li>Onboarding y nurturing automatizado</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Integraciones de sistemas</h3>
+          <p class="service-card__text">Tu CRM hablando con tu WhatsApp. Tu sitio web alimentando tu Google Sheet. Tus leads entrando automáticamente a Slack. Datos que fluyen sin que nadie copie y pegue manualmente.</p>
+          <ul class="service-card__list">
+            <li>CRM ↔ canales de mensajería</li>
+            <li>Webhooks bidireccionales</li>
+            <li>Sincronización de bases de datos</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+              <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+              <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Workflows con IA</h3>
+          <p class="service-card__text">OpenAI, Claude, modelos de embeddings: usamos IA donde realmente agrega valor. Calificación automática de leads, clasificación de mensajes, respuestas inteligentes, generación de contenido contextual.</p>
+          <ul class="service-card__list">
+            <li>Lead scoring automatizado</li>
+            <li>Asistentes con RAG sobre tus datos</li>
+            <li>Análisis y resumen de conversaciones</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESO ========== -->
+  <section class="process" id="proceso">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-header__eyebrow">Cómo trabajamos</p>
+        <h2 class="section-header__title">Cuatro pasos. <span class="accent">Sin sorpresas, sin desaparecer</span>.</h2>
+      </header>
+
+      <div class="process__steps">
+
+        <div class="step reveal">
+          <span class="step__num">01</span>
+          <h3 class="step__title">Discovery</h3>
+          <p class="step__time">1 reunión · 30-45 min</p>
+          <p class="step__text">Entendemos tu negocio, tus herramientas, tus dolores reales. No hablamos de soluciones todavía. Solo escuchamos.</p>
+        </div>
+
+        <div class="step reveal">
+          <span class="step__num">02</span>
+          <h3 class="step__title">Propuesta clara</h3>
+          <p class="step__time">48 horas después</p>
+          <p class="step__text">Te enviamos un documento con alcance detallado, cronograma realista e inversión cerrada. Lo que está incluido y lo que no, escrito en blanco sobre negro.</p>
+        </div>
+
+        <div class="step reveal">
+          <span class="step__num">03</span>
+          <h3 class="step__title">Construimos</h3>
+          <p class="step__time">2-6 semanas según proyecto</p>
+          <p class="step__text">Ves el progreso semana a semana. Demos parciales, revisiones tempranas, espacio para ajustar. Sin desaparecer un mes y reaparecer con algo "casi listo".</p>
+        </div>
+
+        <div class="step reveal">
+          <span class="step__num">04</span>
+          <h3 class="step__title">Soporte continuo</h3>
+          <p class="step__time">Mensual, opcional, cancelable</p>
+          <p class="step__text">El sistema evoluciona con tu negocio. Mantenimiento proactivo, ajustes, mejoras incrementales. No te dejamos solo después del lanzamiento.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALCULADORA ========== -->
+  <section class="calc" id="calculadora">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-header__eyebrow">Calculadora de ahorro</p>
+        <h2 class="section-header__title">¿Cuánta plata estás dejando <span class="accent">sobre la mesa</span> con trabajo manual?</h2>
+        <p class="section-header__subtitle">Mueve los sliders y mira el costo real del trabajo repetitivo en tu equipo. Las cifras se calculan en tiempo real.</p>
+      </header>
+
+      <div class="calc__grid reveal">
+
+        <div class="calc__inputs">
+
+          <div class="calc__input">
+            <label for="hoursInput" class="calc__label">
+              Horas a la semana en tareas repetitivas
+              <span class="calc__value" id="hoursValue">10 hs</span>
+            </label>
+            <input type="range" id="hoursInput" class="calc__slider" min="1" max="40" value="10">
+            <div class="calc__hint">
+              <span>1 h</span>
+              <span>40 h</span>
+            </div>
+          </div>
+
+          <div class="calc__input">
+            <label for="costInput" class="calc__label">
+              Costo promedio de esa hora (USD)
+              <span class="calc__value" id="costValue">$15</span>
+            </label>
+            <input type="range" id="costInput" class="calc__slider" min="5" max="100" value="15">
+            <div class="calc__hint">
+              <span>$5</span>
+              <span>$100</span>
+            </div>
+          </div>
+
+          <div class="calc__input">
+            <label for="peopleInput" class="calc__label">
+              Personas haciendo este trabajo
+              <span class="calc__value" id="peopleValue">3</span>
+            </label>
+            <input type="range" id="peopleInput" class="calc__slider" min="1" max="20" value="3">
+            <div class="calc__hint">
+              <span>1</span>
+              <span>20</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="calc__result">
+          <div class="calc__result-card">
+            <p class="calc__result-label">Estás invirtiendo cada mes en trabajo manual repetitivo</p>
+            <p class="calc__result-value" id="monthlyCost">$1,800</p>
+            <div class="calc__breakdown">
+              <div class="calc__row">
+                <span>Costo anual proyectado</span>
+                <strong id="yearlyCost">$21,600</strong>
+              </div>
+              <div class="calc__row">
+                <span>Ahorro estimado con automatización (~80%)</span>
+                <strong class="calc__row--good" id="savings">$17,280 / año</strong>
+              </div>
+              <div class="calc__row">
+                <span>Tiempo de recuperación de inversión</span>
+                <strong id="roi">~2 meses</strong>
+              </div>
+            </div>
+            <div class="calc__cta">
+              <p class="calc__cta-text">Una automatización a medida de DP Lab arranca desde USD <strong>1,500</strong> y se paga sola en pocos meses.</p>
+              <a href="#contacto" class="btn btn--primary btn--full">Conversemos sobre tu caso →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRABAJO / CASO ========== -->
+  <section class="work" id="trabajo">
+    <div class="container">
+      <header class="section-header reveal">
+        <p class="section-header__eyebrow">Trabajo reciente</p>
+        <h2 class="section-header__title">Casos que <span class="accent">ya funcionan</span> en producción.</h2>
+      </header>
+
+      <article class="case reveal">
+        <div class="case__content">
+          <span class="case__tag">Sitio web · Sector salud</span>
+          <h3 class="case__title">Clínica Dental Aurora</h3>
+          <p class="case__text">Sitio web de captación para una clínica dental especializada en estética y sedación consciente. Diseño orientado a conversión, copywriting persuasivo, formularios conectados a WhatsApp y email. Optimizado para móvil y SEO.</p>
+          <ul class="case__results">
+            <li><strong>Single page</strong> con 8 secciones estratégicas</li>
+            <li><strong>Tiempo de carga</strong> &lt;1 segundo en CDN global</li>
+            <li><strong>Stack</strong>: HTML/CSS/JS, hosteo en Vercel, dominio personalizable</li>
+            <li><strong>Plazo</strong>: 3 semanas de la idea a producción</li>
+          </ul>
+          <a href="https://clinica-aurora-aholguin29s-projects.vercel.app" target="_blank" rel="noopener" class="case__link">Ver el sitio en vivo →</a>
+        </div>
+        <div class="case__visual">
+          <div class="case__mock">
+            <div class="case__mock-bar"><span></span><span></span><span></span></div>
+            <div class="case__mock-content">
+              <p class="case__mock-eyebrow">Clínica Dental Aurora · Palermo</p>
+              <h4 class="case__mock-title">La sonrisa que querés, sin el miedo de siempre.</h4>
+              <div class="case__mock-cta">Reservá tu consulta gratuita</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <p class="work__note">Más casos en preparación. Si quieres ser el próximo, <a href="#contacto">conversemos</a>.</p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="contact" id="contacto">
+    <div class="container contact__inner">
+      <div class="contact__content reveal">
+        <p class="section-header__eyebrow">Conversemos</p>
+        <h2 class="section-header__title">Cuéntanos qué problema quieres resolver.</h2>
+        <p class="contact__lead">Respondemos en menos de 4 horas hábiles. La primera conversación es siempre sin costo y sin compromiso. Si no podemos ayudarte, te derivamos a alguien que sí pueda.</p>
+
+        <ul class="contact__info">
+          <li>
+            <span class="contact__label">Email</span>
+            <a href="mailto:alo@unitecnica.net">alo@unitecnica.net</a>
+          </li>
+          <li>
+            <span class="contact__label">WhatsApp</span>
+            <a href="https://wa.me/573104096939" target="_blank" rel="noopener">+57 310 409 6939</a>
+          </li>
+          <li>
+            <span class="contact__label">Ubicación</span>
+            <span>Pereira, Colombia · Trabajamos remoto con clientes en LatAm y USA</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" onsubmit="event.preventDefault(); handleSubmit(this);">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="company">Empresa</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Cuéntanos brevemente qué necesitas</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+        <p class="form-note">Te respondemos en menos de 4 horas hábiles.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <span class="logo-mark">DP</span>
+          <span class="logo-text">Lab</span>
+        </a>
+        <p>Digital Process Lab — Sistemas digitales que captan y convierten.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <a href="#servicios">Sitios web</a>
+        <a href="#servicios">Automatización</a>
+        <a href="#servicios">Integraciones</a>
+        <a href="#servicios">Workflows IA</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#trabajo">Trabajo</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="mailto:alo@unitecnica.net">alo@unitecnica.net</a>
+        <a href="https://wa.me/573104096939" target="_blank" rel="noopener">WhatsApp</a>
+        <span>Pereira, Colombia</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 DP Lab · Digital Process Lab · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
