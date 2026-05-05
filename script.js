@@ -211,7 +211,9 @@ if (hoursInput && costInput && peopleInput) {
 
 
 // ============ FORMULARIO ============
-function handleSubmit(form) {
+const CONTACT_WEBHOOK_URL = 'https://dpwebhookn8n.dprocesslab.com/webhook/contact-form';
+
+async function handleSubmit(form) {
   const data = {
     name: form.name.value,
     company: form.company.value,
@@ -219,7 +221,27 @@ function handleSubmit(form) {
     message: form.message.value,
   };
 
-  console.log('Formulario enviado:', data);
-  alert('¡Gracias ' + data.name + '! Te contactamos en menos de 4 horas hábiles.');
-  form.reset();
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Enviando...';
+
+  try {
+    const response = await fetch(CONTACT_WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+
+    alert('¡Gracias ' + data.name + '! Te contactamos en menos de 4 horas hábiles.');
+    form.reset();
+  } catch (error) {
+    console.error('Error enviando formulario:', error);
+    alert('Hubo un problema al enviar tu mensaje. Por favor intentá de nuevo en unos minutos o escribinos directo a projects@dprocesslab.com');
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalText;
+  }
 }
