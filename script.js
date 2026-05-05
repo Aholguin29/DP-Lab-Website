@@ -239,7 +239,7 @@ async function handleSubmit(form) {
     form.reset();
   } catch (error) {
     console.error('Error enviando formulario:', error);
-    alert('Hubo un problema al enviar tu mensaje. Por favor intentá de nuevo en unos minutos o escribinos directo a projects@dprocesslab.com');
+    alert('Hubo un problema al enviar tu mensaje. Por favor intenta de nuevo en unos minutos o escríbenos directo a projects@dprocesslab.com');
   } finally {
     submitBtn.disabled = false;
     submitBtn.textContent = originalText;
