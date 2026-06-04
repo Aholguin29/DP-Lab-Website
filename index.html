@@ -3,358 +3,423 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DP Lab - Digital Process Lab. Construimos sistemas digitales que captan y convierten: sitios web, automatizaciones y workflows con IA para empresas que quieren escalar.">
-  <meta property="og:title" content="DP Lab | Sistemas digitales que captan y convierten">
-  <meta property="og:description" content="Sitios web, automatización con n8n y workflows con IA. Para empresas que necesitan crecer sin caos operativo.">
+  <meta name="description" content="DP Lab — Automatizaciones con IA, sitios web de conversión e integraciones a medida para empresas en LatAm que quieren escalar sin caos operativo.">
+  <meta property="og:title" content="DP Lab | Growth Engineering · Automatización · Sitios web">
+  <meta property="og:description" content="Automatizaciones con n8n, workflows de IA, sitios web de conversión. Un sistema integrado, no tres proyectos separados.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dprocesslab.com">
-  <title>DP Lab | Sistemas digitales que captan y convierten</title>
+  <title>DP Lab | Growth Engineering · Automatización · Sitios web</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ========== NAV ========== -->
+  <!-- ===================== NAV ===================== -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#" class="nav__logo">
         <span class="logo-mark">DP</span>
         <span class="logo-text">Lab</span>
       </a>
-
       <nav class="nav__menu" id="navMenu">
         <a href="#servicios" class="nav__link">Servicios</a>
-        <a href="#precios" class="nav__link">Precios</a>
-        <a href="#proceso" class="nav__link">Cómo trabajamos</a>
-        <a href="#calculadora" class="nav__link">Calculadora</a>
-        <a href="#trabajo" class="nav__link">Trabajo</a>
-        <a href="#contacto" class="nav__link">Contacto</a>
-        <a href="#contacto" class="btn btn--primary nav__cta">Agendar conversación</a>
+        <a href="#trabajo"   class="nav__link">Trabajo</a>
+        <a href="#proceso"   class="nav__link">Proceso</a>
+        <a href="#precios"   class="nav__link">Precios</a>
+        <a href="#contacto"  class="nav__link">Contacto</a>
+        <a href="#contacto"  class="btn btn--primary nav__cta">Agendar llamada</a>
       </nav>
-
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="container hero__inner">
-      <div class="hero__content reveal">
-        <p class="hero__eyebrow"><span class="hero__eyebrow-dot"></span> Digital Process Lab</p>
-        <h1 class="hero__title">Construimos los <span class="accent">sistemas digitales</span> que tu empresa no tiene tiempo de armar.</h1>
-        <p class="hero__subtitle">Sitios web que captan leads. Automatizaciones que convierten. Integraciones que conectan tus herramientas. Diseñamos, implementamos y mantenemos el stack digital que tu operación necesita para escalar sin caos.</p>
-        <div class="hero__ctas">
-          <a href="#contacto" class="btn btn--primary">Conversemos sobre tu caso</a>
-          <a href="#servicios" class="btn btn--ghost">Ver servicios →</a>
-        </div>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero__grid"></div>
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+
+    <div class="container hero__body">
+
+      <p class="hero__eyebrow reveal">
+        <span class="eyebrow__dot"></span>
+        Digital Process Lab &nbsp;·&nbsp; Pereira, Colombia
+      </p>
+
+      <h1 class="hero__title reveal">
+        Construimos los <em>sistemas digitales</em><br>
+        que tu empresa no tiene<br>
+        tiempo de armar.
+      </h1>
+
+      <p class="hero__sub reveal">
+        Automatizaciones con n8n, workflows de IA y sitios web de conversión.
+        Diseñados, implementados y mantenidos como un sistema integrado — no como tres proyectos separados.
+      </p>
+
+      <div class="hero__ctas reveal">
+        <a href="#contacto" class="btn btn--primary btn--lg">Conversemos sobre tu caso</a>
+        <a href="#trabajo"  class="btn btn--ghost  btn--lg">Ver trabajo reciente →</a>
       </div>
 
+      <!-- Terminal — el producto en acción -->
       <div class="terminal reveal" id="terminal">
         <div class="terminal__bar">
           <span class="terminal__dot terminal__dot--red"></span>
           <span class="terminal__dot terminal__dot--yellow"></span>
           <span class="terminal__dot terminal__dot--green"></span>
-          <span class="terminal__title">dp-lab — workflow.run</span>
+          <span class="terminal__title">dp-lab — lead-routing.workflow</span>
+          <span class="terminal__live">● LIVE</span>
         </div>
         <div class="terminal__body" id="terminalBody"></div>
       </div>
-    </div>
 
-    <div class="container">
+      <!-- Métricas debajo del terminal -->
       <div class="hero__meta reveal">
         <div class="meta-item">
           <span class="meta-num"><span class="counter" data-target="2" data-suffix="-6">0</span></span>
           <span class="meta-label">semanas de implementación promedio</span>
         </div>
+        <div class="meta-sep"></div>
         <div class="meta-item">
           <span class="meta-num"><span class="counter" data-target="100" data-suffix="%">0</span></span>
           <span class="meta-label">infraestructura propia y controlada</span>
         </div>
+        <div class="meta-sep"></div>
         <div class="meta-item">
-          <span class="meta-num"><span class="counter" data-target="0">0</span></span>
+          <span class="meta-num">$0</span>
           <span class="meta-label">contratos eternos. Cancelas cuando quieras.</span>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- ========== SERVICIOS ========== -->
+  <!-- ===================== STACK BAR ===================== -->
+  <div class="stack-bar">
+    <div class="container stack-bar__inner">
+      <span class="stack-bar__label">Stack técnico</span>
+      <div class="stack-bar__logos">
+        <span class="stack-logo stack-logo--n8n">n8n</span>
+        <span class="stack-logo stack-logo--claude">Claude</span>
+        <span class="stack-logo stack-logo--openai">OpenAI</span>
+        <span class="stack-logo stack-logo--wa">WhatsApp API</span>
+        <span class="stack-logo stack-logo--vercel">Vercel</span>
+        <span class="stack-logo stack-logo--sheets">Google Sheets</span>
+        <span class="stack-logo stack-logo--slack">Slack</span>
+        <span class="stack-logo stack-logo--gmail">Gmail</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== SERVICIOS — BENTO GRID ===================== -->
   <section class="services" id="servicios">
     <div class="container">
+
       <header class="section-header reveal">
-        <p class="section-header__eyebrow">Servicios</p>
-        <h2 class="section-header__title">Cuatro capacidades. <span class="accent">Una sola lógica</span>: que tu negocio gane tiempo y plata.</h2>
-        <p class="section-header__subtitle">Trabajamos en la intersección de diseño, código y automatización. Lo que para otros son tres equipos distintos, en DP Lab es un único sistema integrado.</p>
+        <p class="section-eyebrow">Servicios</p>
+        <h2>Cuatro capacidades. <span class="accent">Una sola lógica.</span></h2>
+        <p class="section-sub">Trabajamos en la intersección de diseño, código y automatización. Lo que para otros son tres equipos distintos, en DP Lab es un único sistema integrado.</p>
       </header>
 
-      <div class="services__grid">
+      <div class="bento">
 
-        <article class="service-card reveal">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-              <line x1="8" y1="21" x2="16" y2="21"/>
-              <line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
+        <!-- A — Sitios web (grande) -->
+        <article class="bento__card bento__a reveal">
+          <div class="bento__copy">
+            <span class="bento__num">01</span>
+            <h3 class="bento__title">Sitios web orientados a conversión</h3>
+            <p class="bento__text">No "sitios lindos". Sitios pensados para generar leads, agendar reuniones y vender 24/7. Copy persuasivo, métricas reales, formularios conectados a tus herramientas.</p>
+            <ul class="bento__list">
+              <li>Landing pages de alta conversión</li>
+              <li>Sitios institucionales con CMS</li>
+              <li>E-commerce simple a medida</li>
+            </ul>
           </div>
-          <h3 class="service-card__title">Sitios web orientados a conversión</h3>
-          <p class="service-card__text">No "sitios lindos". Sitios pensados para generar leads, agendar reuniones y vender 24/7. Diseño moderno, copy persuasivo, formularios conectados a tus herramientas, métricas reales.</p>
-          <ul class="service-card__list">
-            <li>Landing pages de alta conversión</li>
-            <li>Sitios institucionales con CMS</li>
-            <li>E-commerce simple a medida</li>
-          </ul>
+          <div class="bento__visual">
+            <div class="mini-browser">
+              <div class="mini-browser__bar">
+                <span class="mini-dot"></span><span class="mini-dot"></span><span class="mini-dot"></span>
+                <span class="mini-url">dprocesslab.com</span>
+              </div>
+              <div class="mini-browser__page">
+                <div class="mini-hero-block">
+                  <div class="mini-line mini-line--title"></div>
+                  <div class="mini-line mini-line--sub"></div>
+                  <div class="mini-line mini-line--sub mini-line--short"></div>
+                  <div class="mini-btn"></div>
+                </div>
+                <div class="mini-cards">
+                  <div class="mini-card"></div>
+                  <div class="mini-card"></div>
+                  <div class="mini-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article class="service-card reveal">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-            </svg>
-          </div>
-          <h3 class="service-card__title">Automatizaciones a medida con n8n</h3>
-          <p class="service-card__text">Lead routing, calificación, follow-up, sincronización de sistemas. Hospedamos n8n en infraestructura propia para darte costos predecibles y control total. Sin Zapier, sin sorpresas de facturación.</p>
-          <ul class="service-card__list">
-            <li>Automatización de captación de leads</li>
+        <!-- B — Automatización (pequeño) -->
+        <article class="bento__card bento__b reveal">
+          <span class="bento__num">02</span>
+          <h3 class="bento__title">Automatizaciones con n8n</h3>
+          <p class="bento__text">Lead routing, follow-up, sincronización de sistemas. Infraestructura propia — sin Zapier, sin costos impredecibles.</p>
+          <ul class="bento__list">
+            <li>Captación automática de leads</li>
             <li>Workflows operativos internos</li>
-            <li>Onboarding y nurturing automatizado</li>
+            <li>Onboarding y nurturing</li>
           </ul>
+          <div class="bento__flow">
+            <div class="flow-node flow-node--trigger">Formulario</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node flow-node--process">n8n</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node flow-node--output">CRM + WA</div>
+          </div>
         </article>
 
-        <article class="service-card reveal">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"/>
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-            </svg>
-          </div>
-          <h3 class="service-card__title">Integraciones de sistemas</h3>
-          <p class="service-card__text">Tu CRM hablando con tu WhatsApp. Tu sitio web alimentando tu Google Sheet. Tus leads entrando automáticamente a Slack. Datos que fluyen sin que nadie copie y pegue manualmente.</p>
-          <ul class="service-card__list">
+        <!-- C — Integraciones (pequeño) -->
+        <article class="bento__card bento__c reveal">
+          <span class="bento__num">03</span>
+          <h3 class="bento__title">Integraciones de sistemas</h3>
+          <p class="bento__text">Tu CRM hablando con tu WhatsApp. Tus leads entrando a Slack automáticamente. Datos que fluyen sin que nadie copie y pegue.</p>
+          <ul class="bento__list">
             <li>CRM ↔ canales de mensajería</li>
             <li>Webhooks bidireccionales</li>
             <li>Sincronización de bases de datos</li>
           </ul>
+          <div class="bento__integrations">
+            <span class="int-badge int-badge--crm">CRM</span>
+            <span class="int-line"></span>
+            <span class="int-badge int-badge--wa">WA</span>
+            <span class="int-line"></span>
+            <span class="int-badge int-badge--slack">Slack</span>
+          </div>
         </article>
 
-        <article class="service-card reveal">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
-              <polyline points="7.5 19.79 7.5 14.6 3 12"/>
-              <polyline points="21 12 16.5 14.6 16.5 19.79"/>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-              <line x1="12" y1="22.08" x2="12" y2="12"/>
-            </svg>
+        <!-- D — Workflows IA (grande) -->
+        <article class="bento__card bento__d reveal">
+          <div class="bento__copy">
+            <span class="bento__num">04</span>
+            <h3 class="bento__title">Workflows con IA</h3>
+            <p class="bento__text">OpenAI, Claude, embeddings: usamos IA donde realmente agrega valor — calificación de leads, respuestas inteligentes, análisis de conversaciones.</p>
+            <ul class="bento__list">
+              <li>Lead scoring automatizado</li>
+              <li>Asistentes con RAG sobre tus datos</li>
+              <li>Análisis y resumen de conversaciones</li>
+            </ul>
           </div>
-          <h3 class="service-card__title">Workflows con IA</h3>
-          <p class="service-card__text">OpenAI, Claude, modelos de embeddings: usamos IA donde realmente agrega valor. Calificación automática de leads, clasificación de mensajes, respuestas inteligentes, generación de contenido contextual.</p>
-          <ul class="service-card__list">
-            <li>Lead scoring automatizado</li>
-            <li>Asistentes con RAG sobre tus datos</li>
-            <li>Análisis y resumen de conversaciones</li>
-          </ul>
+          <div class="bento__visual bento__visual--ai">
+            <div class="ai-bubble ai-bubble--in">
+              <span class="ai-label">Lead detectado</span>
+              Juan García · CEO · 45 empleados · interés: automatización WhatsApp
+            </div>
+            <div class="ai-bubble ai-bubble--out">
+              <span class="ai-label">IA procesó</span>
+              Score: <strong class="ai-score">87/100</strong> · Prioridad Alta · Asignado a SDR-1
+            </div>
+            <div class="ai-bubble ai-bubble--sys">
+              <span class="ai-label">Acciones ejecutadas</span>
+              Notificación → #leads-new &nbsp;·&nbsp; Calendar creado ✓ &nbsp;·&nbsp; CRM actualizado ✓
+            </div>
+          </div>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ========== PRECIOS ========== -->
-  <section class="pricing" id="precios">
+  <!-- ===================== TRABAJO — CASOS ===================== -->
+  <section class="work" id="trabajo">
     <div class="container">
 
-      <div class="pricing__header reveal">
-        <p class="section__eyebrow">Inversión</p>
-        <h2 class="section__title">Tres formas de empezar.</h2>
-        <p class="section__subtitle">
-          Sitios web orientados a conversión y automatizaciones a medida
-          <span class="pricing__from">desde COP 2.000.000</span>.
-          Elegimos el paquete contigo según el alcance que tu operación realmente necesita.
-        </p>
-      </div>
+      <header class="section-header reveal">
+        <p class="section-eyebrow">Trabajo reciente</p>
+        <h2>Lo que ya <span class="accent">funciona en producción.</span></h2>
+        <p class="section-sub">Cada proyecto que entregamos termina aquí. Resultados medibles, no mockups de PowerPoint.</p>
+      </header>
 
-      <div class="pricing__grid">
+      <div class="cases">
 
-        <!-- TIER 1 — ESENCIAL -->
-        <article class="pricing__card reveal" data-tier="esencial">
-          <div class="pricing__card-head">
-            <p class="pricing__tier">Esencial</p>
-            <p class="pricing__tier-sub">Para empezar a captar leads en línea</p>
+        <!-- Caso 1 — Aurora -->
+        <article class="case reveal">
+          <div class="case__meta">
+            <div class="case__tags">
+              <span class="case__tag">Sitio web</span>
+              <span class="case__tag">Sector salud</span>
+            </div>
+            <span class="case__status case__status--live">● En vivo</span>
           </div>
-
-          <ul class="pricing__features">
-            <li>Landing de una página orientada a conversión</li>
-            <li>Formulario de contacto conectado a tu correo</li>
-            <li>Botón directo a WhatsApp</li>
-            <li>Diseño responsive (móvil, tablet, desktop)</li>
-            <li>Hosting + dominio incluidos el primer año</li>
-            <li>Entrega en 7 a 10 días</li>
-          </ul>
-
-          <p class="pricing__note">Ideal si vas a empezar a captar leads en línea y necesitas un punto de partida profesional.</p>
-
-          <a href="#contacto" class="btn btn--ghost pricing__cta">Conversemos →</a>
+          <div class="case__visual">
+            <div class="case__mock">
+              <div class="case__mock-bar">
+                <span class="mdot"></span><span class="mdot"></span><span class="mdot"></span>
+                <span class="case__mock-url">clinicadentalaurorapalermo.com</span>
+              </div>
+              <div class="case__mock-screen" style="background:linear-gradient(135deg,#F5EFE6,#FFF);">
+                <p style="font-size:0.65rem;font-weight:700;color:#1E3A5F;font-family:'Space Grotesk',sans-serif;letter-spacing:-0.01em;line-height:1.3;margin-bottom:8px;">La sonrisa que quieres,<br>sin el miedo de siempre.</p>
+                <p style="font-size:0.48rem;color:#64748B;margin-bottom:8px;line-height:1.4;">Clínica Dental Aurora · Palermo · Bogotá</p>
+                <div style="background:#1E3A5F;color:white;font-size:0.48rem;padding:4px 10px;border-radius:5px;display:inline-block;font-weight:600;letter-spacing:0.02em;">Reserva tu consulta gratuita →</div>
+              </div>
+            </div>
+          </div>
+          <div class="case__content">
+            <h3 class="case__title">Clínica Dental Aurora</h3>
+            <p class="case__text">Landing de alta conversión para clínica dental de estética y sedación consciente. Copy, diseño, formularios conectados a WhatsApp y email — de la idea a producción en 3 semanas.</p>
+            <div class="case__kpis">
+              <div class="kpi">
+                <span class="kpi__num">&lt;1s</span>
+                <span class="kpi__label">Carga en CDN global</span>
+              </div>
+              <div class="kpi">
+                <span class="kpi__num">8</span>
+                <span class="kpi__label">Secciones estratégicas</span>
+              </div>
+              <div class="kpi">
+                <span class="kpi__num">3 sem</span>
+                <span class="kpi__label">Idea → producción</span>
+              </div>
+            </div>
+            <a href="https://clinica-aurora-aholguin29s-projects.vercel.app" target="_blank" rel="noopener" class="case__link">
+              Ver sitio en vivo
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
         </article>
 
-        <!-- TIER 2 — PROFESIONAL (destacado) -->
-        <article class="pricing__card pricing__card--featured reveal" data-tier="profesional">
-          <span class="pricing__badge">Más elegido</span>
-
-          <div class="pricing__card-head">
-            <p class="pricing__tier">Profesional</p>
-            <p class="pricing__tier-sub">Para PyMEs con varios servicios</p>
+        <!-- Caso 2 — Buenavista (en construcción) -->
+        <article class="case case--wip reveal">
+          <div class="case__meta">
+            <div class="case__tags">
+              <span class="case__tag">Sitio web</span>
+              <span class="case__tag">Bot WhatsApp</span>
+              <span class="case__tag">Industrial</span>
+            </div>
+            <span class="case__status case__status--wip">⚙ En construcción</span>
           </div>
-
-          <ul class="pricing__features">
-            <li>Sitio multi-página (4-6 secciones)</li>
-            <li>Formulario + integración con Calendly</li>
-            <li>Una automatización a medida (notificaciones, captura de leads, follow-up)</li>
-            <li>SEO básico + Open Graph + sitemap</li>
-            <li>Rendimiento garantizado (Lighthouse 90+)</li>
-            <li>Entrega en 15 a 20 días</li>
-          </ul>
-
-          <p class="pricing__note">El paquete que la mayoría de nuestros clientes elige. Equilibrio entre alcance y velocidad.</p>
-
-          <a href="#contacto" class="btn btn--primary pricing__cta">Conversemos →</a>
+          <div class="case__visual">
+            <div class="case__mock case__mock--dark">
+              <div class="case__mock-bar">
+                <span class="mdot"></span><span class="mdot"></span><span class="mdot"></span>
+                <span class="case__mock-url">acuicolabuenavista.com</span>
+              </div>
+              <div class="case__mock-screen" style="background:#0A0F1E;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:14px;">
+                <p style="font-size:0.7rem;font-weight:800;color:white;font-family:'Space Grotesk',sans-serif;letter-spacing:-0.035em;line-height:1.1;margin-bottom:8px;">Producción.<br>Maquinaria.<br><span style="color:#4ADE80;">Proyectos.</span></p>
+                <div style="background:#1FA84E;color:white;font-size:0.45rem;padding:3px 8px;border-radius:999px;font-weight:600;letter-spacing:0.02em;">Conversemos un proyecto →</div>
+              </div>
+            </div>
+          </div>
+          <div class="case__content">
+            <h3 class="case__title">Acuícola Buenavista S.A.S.</h3>
+            <p class="case__text">Sitio web corporativo + bot WhatsApp inteligente con dos flujos para empresa acuícola industrial en Tarso, Antioquia. Automatización de 50+ mensajes diarios que tardaban hasta 3 días en responderse.</p>
+            <div class="case__kpis">
+              <div class="kpi">
+                <span class="kpi__num">2</span>
+                <span class="kpi__label">Flujos de bot diferenciados</span>
+              </div>
+              <div class="kpi">
+                <span class="kpi__num">50+</span>
+                <span class="kpi__label">Mensajes/día automatizados</span>
+              </div>
+              <div class="kpi">
+                <span class="kpi__num">Jun 2026</span>
+                <span class="kpi__label">Entrega estimada</span>
+              </div>
+            </div>
+            <span class="case__wip-badge">Publicando pronto</span>
+          </div>
         </article>
 
-        <!-- TIER 3 — INTEGRAL -->
-        <article class="pricing__card reveal" data-tier="integral">
-          <div class="pricing__card-head">
-            <p class="pricing__tier">Integral</p>
-            <p class="pricing__tier-sub">Cuando WhatsApp es tu canal principal</p>
+        <!-- Caso 3 — CTA slot -->
+        <article class="case case--cta reveal">
+          <div class="case__cta-body">
+            <span class="case__cta-num">→</span>
+            <h3 class="case__cta-title">¿Tu empresa?</h3>
+            <p class="case__cta-text">Cada caso que cerramos llega aquí. Si quieres ser el próximo, conversemos — sin compromiso.</p>
+            <a href="#contacto" class="btn btn--primary">Agendar conversación</a>
           </div>
-
-          <ul class="pricing__features">
-            <li>Todo lo del Profesional</li>
-            <li>Bot WhatsApp con respuestas automáticas + escalamiento humano</li>
-            <li>Dos automatizaciones adicionales con n8n</li>
-            <li>Dashboard simple de leads y conversaciones</li>
-            <li>Capacitación de uso al equipo</li>
-            <li>Entrega en 25 a 30 días</li>
-          </ul>
-
-          <p class="pricing__note">Para operaciones donde WhatsApp es el canal principal y se pierden leads por falta de respuesta.</p>
-
-          <a href="#contacto" class="btn btn--ghost pricing__cta">Conversemos →</a>
         </article>
 
       </div>
-
-      <div class="pricing__footer reveal">
-        <p>
-          ¿Operación multi-sede, exportadora o con presencia internacional?
-          <a href="#contacto">Hablemos de un proyecto a medida →</a>
-        </p>
-        <p class="pricing__small">
-          Todos los paquetes incluyen plan de mantenimiento mensual opcional.
-          Sin permanencia mínima — cancelas cuando quieras.
-        </p>
-      </div>
-
     </div>
   </section>
 
-  <!-- ========== PROCESO ========== -->
+  <!-- ===================== PROCESO ===================== -->
   <section class="process" id="proceso">
     <div class="container">
       <header class="section-header reveal">
-        <p class="section-header__eyebrow">Cómo trabajamos</p>
-        <h2 class="section-header__title">Cuatro pasos. <span class="accent">Sin sorpresas, sin desaparecer</span>.</h2>
+        <p class="section-eyebrow">Cómo trabajamos</p>
+        <h2>Cuatro pasos. <span class="accent">Sin sorpresas, sin desaparecer.</span></h2>
       </header>
-
       <div class="process__steps">
-
         <div class="step reveal">
           <span class="step__num">01</span>
           <h3 class="step__title">Discovery</h3>
           <p class="step__time">1 reunión · 30-45 min</p>
           <p class="step__text">Entendemos tu negocio, tus herramientas, tus dolores reales. No hablamos de soluciones todavía. Solo escuchamos.</p>
         </div>
-
         <div class="step reveal">
           <span class="step__num">02</span>
           <h3 class="step__title">Propuesta clara</h3>
           <p class="step__time">48 horas después</p>
-          <p class="step__text">Te enviamos un documento con alcance detallado, cronograma realista e inversión cerrada. Lo que está incluido y lo que no, escrito en blanco sobre negro.</p>
+          <p class="step__text">Alcance detallado, cronograma realista e inversión cerrada. Lo que está incluido y lo que no, escrito en blanco sobre negro.</p>
         </div>
-
         <div class="step reveal">
           <span class="step__num">03</span>
           <h3 class="step__title">Construimos</h3>
           <p class="step__time">2-6 semanas según proyecto</p>
-          <p class="step__text">Ves el progreso semana a semana. Demos parciales, revisiones tempranas, espacio para ajustar. Sin desaparecer un mes y reaparecer con algo "casi listo".</p>
+          <p class="step__text">Ves el progreso semana a semana. Demos parciales, revisiones tempranas. Sin desaparecer un mes y reaparecer con algo "casi listo".</p>
         </div>
-
         <div class="step reveal">
           <span class="step__num">04</span>
           <h3 class="step__title">Soporte continuo</h3>
           <p class="step__time">Mensual, opcional, cancelable</p>
           <p class="step__text">El sistema evoluciona con tu negocio. Mantenimiento proactivo, ajustes, mejoras incrementales. No te dejamos solo después del lanzamiento.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ========== CALCULADORA ========== -->
+  <!-- ===================== CALCULADORA ===================== -->
   <section class="calc" id="calculadora">
     <div class="container">
       <header class="section-header reveal">
-        <p class="section-header__eyebrow">Calculadora de ahorro</p>
-        <h2 class="section-header__title">¿Cuánta plata estás dejando <span class="accent">sobre la mesa</span> con trabajo manual?</h2>
-        <p class="section-header__subtitle">Mueve los sliders y mira el costo real del trabajo repetitivo en tu equipo. Las cifras se calculan en tiempo real.</p>
+        <p class="section-eyebrow">Calculadora de ahorro</p>
+        <h2>¿Cuánta plata estás dejando <span class="accent">sobre la mesa</span> con trabajo manual?</h2>
+        <p class="section-sub">Mueve los sliders y mira el costo real del trabajo repetitivo en tu equipo. Las cifras se calculan en tiempo real.</p>
       </header>
 
       <div class="calc__grid reveal">
-
         <div class="calc__inputs">
-
           <div class="calc__input">
             <label for="hoursInput" class="calc__label">
               Horas a la semana en tareas repetitivas
               <span class="calc__value" id="hoursValue">10 hs</span>
             </label>
             <input type="range" id="hoursInput" class="calc__slider" min="1" max="40" value="10">
-            <div class="calc__hint">
-              <span>1 h</span>
-              <span>40 h</span>
-            </div>
+            <div class="calc__hint"><span>1 h</span><span>40 h</span></div>
           </div>
-
           <div class="calc__input">
             <label for="costInput" class="calc__label">
               Costo promedio de esa hora (USD)
               <span class="calc__value" id="costValue">$15</span>
             </label>
             <input type="range" id="costInput" class="calc__slider" min="5" max="100" value="15">
-            <div class="calc__hint">
-              <span>$5</span>
-              <span>$100</span>
-            </div>
+            <div class="calc__hint"><span>$5</span><span>$100</span></div>
           </div>
-
           <div class="calc__input">
             <label for="peopleInput" class="calc__label">
               Personas haciendo este trabajo
               <span class="calc__value" id="peopleValue">3</span>
             </label>
             <input type="range" id="peopleInput" class="calc__slider" min="1" max="20" value="3">
-            <div class="calc__hint">
-              <span>1</span>
-              <span>20</span>
-            </div>
+            <div class="calc__hint"><span>1</span><span>20</span></div>
           </div>
-
         </div>
 
         <div class="calc__result">
@@ -381,56 +446,95 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ========== TRABAJO / CASO ========== -->
-  <section class="work" id="trabajo">
+  <!-- ===================== PRECIOS ===================== -->
+  <section class="pricing" id="precios">
     <div class="container">
-      <header class="section-header reveal">
-        <p class="section-header__eyebrow">Trabajo reciente</p>
-        <h2 class="section-header__title">Casos que <span class="accent">ya funcionan</span> en producción.</h2>
-      </header>
 
-      <article class="case reveal">
-        <div class="case__content">
-          <span class="case__tag">Sitio web · Sector salud</span>
-          <h3 class="case__title">Clínica Dental Aurora</h3>
-          <p class="case__text">Sitio web de captación para una clínica dental especializada en estética y sedación consciente. Diseño orientado a conversión, copywriting persuasivo, formularios conectados a WhatsApp y email. Optimizado para móvil y SEO.</p>
-          <ul class="case__results">
-            <li><strong>Single page</strong> con 8 secciones estratégicas</li>
-            <li><strong>Tiempo de carga</strong> &lt;1 segundo en CDN global</li>
-            <li><strong>Stack</strong>: HTML/CSS/JS, hosteo en Vercel, dominio personalizable</li>
-            <li><strong>Plazo</strong>: 3 semanas de la idea a producción</li>
-          </ul>
-          <a href="https://clinica-aurora-aholguin29s-projects.vercel.app" target="_blank" rel="noopener" class="case__link">Ver el sitio en vivo →</a>
-        </div>
-        <div class="case__visual">
-          <div class="case__mock">
-            <div class="case__mock-bar"><span></span><span></span><span></span></div>
-            <div class="case__mock-content">
-              <p class="case__mock-eyebrow">Clínica Dental Aurora · Palermo</p>
-              <h4 class="case__mock-title">La sonrisa que quieres, sin el miedo de siempre.</h4>
-              <div class="case__mock-cta">Reserva tu consulta gratuita</div>
-            </div>
+      <div class="pricing__header reveal">
+        <p class="section-eyebrow">Inversión</p>
+        <h2>Tres formas de empezar.</h2>
+        <p class="section-sub">
+          Sitios web y automatizaciones
+          <span class="pricing__from">desde COP 2.000.000</span>.
+          Elegimos el paquete contigo según el alcance que tu operación realmente necesita.
+        </p>
+      </div>
+
+      <div class="pricing__grid">
+
+        <article class="pricing__card reveal" data-tier="esencial">
+          <div class="pricing__card-head">
+            <p class="pricing__tier">Esencial</p>
+            <p class="pricing__tier-sub">Para empezar a captar leads en línea</p>
           </div>
-        </div>
-      </article>
+          <ul class="pricing__features">
+            <li>Landing de una página orientada a conversión</li>
+            <li>Formulario conectado a tu correo</li>
+            <li>Botón directo a WhatsApp</li>
+            <li>Diseño responsive (móvil, tablet, desktop)</li>
+            <li>Hosting + dominio incluidos el primer año</li>
+            <li>Entrega en 7 a 10 días</li>
+          </ul>
+          <p class="pricing__note">Ideal si vas a empezar a captar leads en línea y necesitas un punto de partida profesional.</p>
+          <a href="#contacto" class="btn btn--ghost pricing__cta">Conversemos →</a>
+        </article>
 
-      <p class="work__note">Más casos en preparación. Si quieres ser el próximo, <a href="#contacto">conversemos</a>.</p>
+        <article class="pricing__card pricing__card--featured reveal" data-tier="profesional">
+          <span class="pricing__badge">Más elegido</span>
+          <div class="pricing__card-head">
+            <p class="pricing__tier">Profesional</p>
+            <p class="pricing__tier-sub">Para PyMEs con varios servicios</p>
+          </div>
+          <ul class="pricing__features">
+            <li>Sitio multi-página (4-6 secciones)</li>
+            <li>Formulario + integración con Calendly</li>
+            <li>Una automatización a medida (notificaciones, leads, follow-up)</li>
+            <li>SEO básico + Open Graph + sitemap</li>
+            <li>Rendimiento garantizado (Lighthouse 90+)</li>
+            <li>Entrega en 15 a 20 días</li>
+          </ul>
+          <p class="pricing__note">El paquete que la mayoría de nuestros clientes elige. Equilibrio entre alcance y velocidad.</p>
+          <a href="#contacto" class="btn btn--primary pricing__cta">Conversemos →</a>
+        </article>
+
+        <article class="pricing__card reveal" data-tier="integral">
+          <div class="pricing__card-head">
+            <p class="pricing__tier">Integral</p>
+            <p class="pricing__tier-sub">Cuando WhatsApp es tu canal principal</p>
+          </div>
+          <ul class="pricing__features">
+            <li>Todo lo del Profesional</li>
+            <li>Bot WhatsApp con respuestas automáticas + escalamiento humano</li>
+            <li>Dos automatizaciones adicionales con n8n</li>
+            <li>Dashboard simple de leads y conversaciones</li>
+            <li>Capacitación de uso al equipo</li>
+            <li>Entrega en 25 a 30 días</li>
+          </ul>
+          <p class="pricing__note">Para operaciones donde WhatsApp es el canal principal y se pierden leads por falta de respuesta.</p>
+          <a href="#contacto" class="btn btn--ghost pricing__cta">Conversemos →</a>
+        </article>
+
+      </div>
+
+      <div class="pricing__footer reveal">
+        <p>¿Operación multi-sede, exportadora o con presencia internacional? <a href="#contacto">Hablemos de un proyecto a medida →</a></p>
+        <p class="pricing__small">Todos los paquetes incluyen plan de mantenimiento mensual opcional. Sin permanencia mínima.</p>
+      </div>
+
     </div>
   </section>
 
-  <!-- ========== CONTACTO ========== -->
+  <!-- ===================== CONTACTO ===================== -->
   <section class="contact" id="contacto">
     <div class="container contact__inner">
       <div class="contact__content reveal">
-        <p class="section-header__eyebrow">Conversemos</p>
-        <h2 class="section-header__title">Cuéntanos qué problema quieres resolver.</h2>
+        <p class="section-eyebrow">Conversemos</p>
+        <h2>Cuéntanos qué problema quieres resolver.</h2>
         <p class="contact__lead">Respondemos en menos de 4 horas hábiles. La primera conversación es siempre sin costo y sin compromiso. Si no podemos ayudarte, te derivamos a alguien que sí pueda.</p>
-
         <ul class="contact__info">
           <li>
             <span class="contact__label">Email</span>
@@ -450,19 +554,19 @@
       <form class="contact__form reveal" id="contactForm" onsubmit="event.preventDefault(); handleSubmit(this);">
         <div class="form-group">
           <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" required placeholder="Tu nombre">
         </div>
         <div class="form-group">
           <label for="company">Empresa</label>
-          <input type="text" id="company" name="company">
+          <input type="text" id="company" name="company" placeholder="Nombre de tu empresa">
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required placeholder="tu@empresa.com">
         </div>
         <div class="form-group">
           <label for="message">Cuéntanos brevemente qué necesitas</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+          <textarea id="message" name="message" rows="4" required placeholder="Describe el problema que quieres resolver..."></textarea>
         </div>
         <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
         <p class="form-note">Te respondemos en menos de 4 horas hábiles.</p>
@@ -470,7 +574,7 @@
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
+  <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
@@ -479,29 +583,27 @@
           <span class="logo-text">Lab</span>
         </a>
         <p>Digital Process Lab — Sistemas digitales que captan y convierten.</p>
+        <p class="footer__location">Pereira, Colombia · LatAm + USA</p>
       </div>
-
       <div class="footer__col">
         <h4>Servicios</h4>
         <a href="#servicios">Sitios web</a>
-        <a href="#servicios">Automatización</a>
+        <a href="#servicios">Automatización n8n</a>
         <a href="#servicios">Integraciones</a>
         <a href="#servicios">Workflows IA</a>
       </div>
-
       <div class="footer__col">
         <h4>Empresa</h4>
-        <a href="#proceso">Cómo trabajamos</a>
-        <a href="#calculadora">Calculadora</a>
         <a href="#trabajo">Trabajo</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#precios">Precios</a>
+        <a href="#calculadora">Calculadora ROI</a>
       </div>
-
       <div class="footer__col">
         <h4>Contacto</h4>
         <a href="mailto:projects@dprocesslab.com">projects@dprocesslab.com</a>
-        <a href="https://wa.me/573104096939" target="_blank" rel="noopener">WhatsApp</a>
-        <span>Pereira, Colombia</span>
+        <a href="https://wa.me/573104096939" target="_blank" rel="noopener">WhatsApp directo</a>
+        <a href="https://calendly.com/dprocesslab/30min" target="_blank" rel="noopener">Agendar llamada</a>
       </div>
     </div>
     <div class="footer__bottom">
