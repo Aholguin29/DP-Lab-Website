@@ -173,7 +173,7 @@ const savingsEl = document.getElementById('savings');
 const roiEl = document.getElementById('roi');
 
 function formatMoney(n) {
-  return '$' + Math.round(n).toLocaleString('en-US');
+  return '$ ' + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
 function calc() {
@@ -184,11 +184,11 @@ function calc() {
   const monthly = hours * cost * people * 4.33;
   const yearly = monthly * 12;
   const savings = yearly * 0.8;
-  const investment = 2500;
+  const investment = 4500000;
   const roiMonths = monthly > 0 ? Math.max(1, Math.round(investment / (monthly * 0.8))) : 99;
 
   hoursValue.textContent = hours + ' hs';
-  costValue.textContent = '$' + cost;
+  costValue.textContent = '$ ' + cost.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
   peopleValue.textContent = people;
 
   monthlyCostEl.textContent = formatMoney(monthly);
